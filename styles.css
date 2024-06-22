@@ -1,0 +1,45 @@
+body{
+	font-family: 'Metal Mania', sans-serif;
+	color: #F92F2F;                                             
+}
+center{
+	margin-top: 17px;
+}
+#cc{
+	background-color: #F92F2F;
+	height: 520px;
+	width: 420px;
+	border-radius: 15px;
+	display: grid;
+	grid-template-rows: 20%;
+}
+#interface{
+	background-color: #D9D9D9;
+	height: 60px;
+	width: 380px;
+	border-radius: 10px;
+	margin-top: 10px;
+}
+#buttons{
+	display: grid;
+	grid-template-columns: 25% 25% 25% 25%;
+	grid-template-rows: 25% 25% 25% 25%;
+	place-items:  center;
+	margin-bottom: 30px;
+}
+button{
+	border-radius: 100px;
+	height: 86px;
+	width: 86px;
+	border: none;
+	color: #F92F2F;
+}
+button:hover{
+	color: #FFF;
+}
+.operation{
+	background-color: #D9D9D9;
+}
+.number{
+	background-color: #F9EFEF;
+}
