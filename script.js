@@ -110,9 +110,9 @@ function clear(){
 	}
 }
 function addition(){
+	equal();
 	choice = "a";
 	console.log(document.querySelector("#interface").innerHTML);
-	equal();
 	console.log(document.querySelector("#interface").innerHTML);
 	while(number.length > 0) {
     	number.pop();
@@ -150,16 +150,16 @@ let time = 0;
 function difference(){
 	time++;
 	if (time == 1) {
-		choice = "diff";
 		equal();
+		choice = "diff";
 		while(number.length > 0) {
 	    	number.pop();
 		}
 		myDiffVar -= parseInt(document.querySelector("#interface").innerHTML);
 		document.querySelector("#interface").innerHTML = myDiffVar;
 	}else{
-		choice = "diff";
 		equal();
+		choice = "diff";
 		while(number.length > 0) {
 	    	number.pop();
 		}
@@ -170,8 +170,9 @@ function difference(){
 	
 }
 function mutiplication(){
-	choice = "m";
 	equal();
+	choice = "m";
+	
 	while(number.length > 0) {
     	number.pop();
 	}
