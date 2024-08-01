@@ -104,14 +104,19 @@ function clear(){
 	myMuliVar = parseInt(1);
 	myDiffVar = parseInt(0);
 	myDivVar = parseInt(1);
+	myEqAddVar = parseInt(0);
+	myEqMultiVar = parseInt(1);
+	myEqDiffVar = parseInt(0);
+	myEqDivVar = parseInt(1);
 	time = 0;
 	while(number.length > 0) {
     	number.pop();
 	}
 }
 function addition(){
-	equal();
 	choice = "a";
+	equal();
+	
 	console.log(document.querySelector("#interface").innerHTML);
 	console.log(document.querySelector("#interface").innerHTML);
 	while(number.length > 0) {
@@ -150,16 +155,18 @@ let time = 0;
 function difference(){
 	time++;
 	if (time == 1) {
-		equal();
 		choice = "diff";
+		equal();
+		
 		while(number.length > 0) {
 	    	number.pop();
 		}
 		myDiffVar -= parseInt(document.querySelector("#interface").innerHTML);
 		document.querySelector("#interface").innerHTML = myDiffVar;
 	}else{
-		equal();
 		choice = "diff";
+		equal();
+		
 		while(number.length > 0) {
 	    	number.pop();
 		}
@@ -170,8 +177,9 @@ function difference(){
 	
 }
 function mutiplication(){
-	equal();
 	choice = "m";
+	equal();
+	
 	
 	while(number.length > 0) {
     	number.pop();
